@@ -34,7 +34,7 @@ def train_model():
     # Компиляция модели
     model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
-    # Обучение модели
+    # Обучение модели с созданием эпох
     history = model.fit(x_train, y_train, batch_size=64, epochs=10, validation_split=0.1)
 
     # Визуализация процесса обучения
